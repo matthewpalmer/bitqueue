@@ -1,7 +1,7 @@
 # bitqueue
-A bitqueue abstracts the bitwise operations necessary to shift bits along, append bits, and so on.
+A bitqueue is a FIFO queue of bits. It abstracts the bitwise operations necessary to shift bits along, append bits, and so on.
 
-A bitqueue is a FIFO queue of bits. In `1 0 1 1 0 1 0 0`, the 1 at the left end was added earliest (longest time ago), and the 0 at the right end was added soonest (shortest time ago).
+In `1 0 1 1 0 1 0 0`, the 1 at the left end was added earliest (longest time ago), and the 0 at the right end was added soonest (shortest time ago).
 
 Also, a bitqueue is always full, so enqueuing a bit dequeues
 the bit on the other end.
