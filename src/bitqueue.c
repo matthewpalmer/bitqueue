@@ -25,10 +25,6 @@ bitqueue new_bitqueue(int length, int initial_value) {
     return b; 
 }
 
-void set_current_value_bitqueue(bitqueue b, int value) {
-    b->current_value = value;
-}
-
 int enqueue_bitqueue(bitqueue b, int bit) {
     assert(bit == 1 || bit == 0);
     // Dequeueing from the bitqueue has the convenient effect
@@ -50,6 +46,10 @@ int length_bitqueue(bitqueue b) {
 
 int current_value_bitqueue(bitqueue b) {
     return b->current_value;
+}
+
+void set_current_value_bitqueue(bitqueue b, int value) {
+    b->current_value = value;
 }
 
 void show_bitqueue(bitqueue b) {
