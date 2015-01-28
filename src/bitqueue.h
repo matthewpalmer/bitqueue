@@ -66,7 +66,7 @@ int current_value_bitqueue(bitqueue b);
  * @param b     The bitqueue to set the current value of
  * @param value The value to set the queue to
  */
-void set_current_value_bitqueue(bitqueue b, int value)
+void set_current_value_bitqueue(bitqueue b, int value);
 
 /**
  * Appends a bit to the bitqueue on the right-hand end.
