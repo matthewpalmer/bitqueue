@@ -1,18 +1,20 @@
 CC=gcc
 CFLAGS=-Wall -Werror -g
 
-test_biqueue : bitqueue_tests.o bitqueue.o bitutils.o
+bin/test_bitqueue : bitqueue_tests.o bitqueue.o bitutils.o
 	$(CC) $(CFLAGS) -o $@ $^
 
-bitqueue : bitqueue.o bitutils.o
+bin/bitqueue : bitqueue.o bitutils.o
 	$(CC) $(CFLAGS) -o $@ $^
 
-bitqueue_tests.o : bitqueue_tests.c
+bitqueue_tests.o : src/bitqueue_tests.c
 	$(CC) $(CFLAGS) -c $^
 
-bitqueue.o : bitqueue.c
+bitqueue.o : src/bitqueue.c
 	$(CC) $(CFLAGS) -c $^
 
-bitutils.o : bitutils.c
+bitutils.o : src/bitutils.c
 	$(CC) $(CFLAGS) -c $^
 	
+clean : 
+	rm *.o
