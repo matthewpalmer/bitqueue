@@ -36,6 +36,25 @@ int set_kth_bit_from_right(int n, int k);
 int unset_kth_bit_from_right(int n, int k);
 
 /**
+ * Get the collection of bits within the range [k1, k2).
+ * Note that these are numbered from the right.
+ * @param  n  The number to extract bits from
+ * @param  k1 The first index (lower)
+ * @param  k2 The second index (higher)
+ * @return    The value of the bits taken from n in the range k2 - k1
+ */
+int bits_in_range(int n, int k1, int k2);
+
+/**
+ * Appends a bit to the end of the input number
+ * Note that this necessitates shifting the input number left
+ * @param  n   The input number
+ * @param  bit The bit to append. 1 | 0
+ * @return     The new value, with the bit appended.
+ */
+int append_bit(int n, int bit);
+
+/**
  * Prints the bits of an item
  * @param size The number of bytes an item takes up
  * @param ptr  A pointer to the item to be printed.

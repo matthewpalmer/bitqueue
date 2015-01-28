@@ -6,6 +6,8 @@ In `1 0 1 1 0 1 0 0`, the 1 at the left end was added earliest (longest time ago
 Also, a bitqueue is always full, so enqueuing a bit dequeues
 the bit on the other end.
 
+Currently, bitqueues are capped at the length of an `int` on your system.
+
 ## Usage
 Create a new bitqueue
 
