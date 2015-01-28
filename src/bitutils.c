@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <assert.h>
 
 // Get the kth bit *from the right*
 int kth_bit_from_right(int n, int k) {
