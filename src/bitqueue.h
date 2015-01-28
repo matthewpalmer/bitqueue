@@ -78,3 +78,10 @@ int enqueue_bitqueue(bitqueue b, int bit);
  * @param b The bitqueue to display.
  */
 void show_bitqueue(bitqueue b);
+
+/**
+ * Sets the current value of the bitqueue
+ * @param b     The bitqueue to set the current value of
+ * @param value The value to set the queue to
+ */
+void set_current_value_bitqueue(bitqueue b, int value)
